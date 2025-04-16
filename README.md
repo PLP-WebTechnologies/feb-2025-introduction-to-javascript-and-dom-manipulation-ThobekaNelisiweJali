@@ -69,20 +69,6 @@ Enjoy the project and happy coding!
 
 ---
 
-### How to Download the Document
-
-1. **Copy the above text** (everything between the triple backticks).
-2. **Open a text editor** (such as Notepad, VS Code, or Sublime Text).
-3. **Paste the text** into a new file.
-4. **Save the file as** `README.md`.
-
-This file is now ready to be included with your project as a downloadable document. Let me know if you need any further adjustments!
-
-
-
-
-
-
 
 
 
