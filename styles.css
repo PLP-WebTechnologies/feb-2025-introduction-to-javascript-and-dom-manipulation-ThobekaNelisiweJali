@@ -1,0 +1,224 @@
+/* styles.css */
+/* Define your CSS variables for the brown theme */
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  
+  h1, h2, h3, nav a {
+    color: var(--accent1);
+  }
+  
+  nav {
+    background-color: var(--card-bg); 
+  }
+  
+  footer {
+    background: var(--footer-bg);
+    color: var(--accent1);
+  }
+  
+/* Define your brown theme variables */
+:root[data-theme="brown"] {
+    --bg-color: #8B4513;      /* SaddleBrown background */
+    --text-color: #FFFFFF;    /* White text */
+    --accent1: #000000;       /* Black accents (for headings, links, etc.) */
+    --accent2: #F5F5DC;       /* Light beige - to serve as a secondary accent */
+    --card-bg: #A0522D;       /* Sienna for cards */
+    --footer-bg: #5D4037;     /* Darker brown for the footer */
+    }
+    :root[data-theme="light"] {
+        --bg-color: #FFFFFF;      /* White background */
+        --text-color: #000000;    /* Black text */
+        --accent1: #8B4513;       /* Brown accents */
+        --accent2: #A0522D;       /* Sienna */
+        --card-bg: #F5F5DC;       /* Light beige for cards */
+        --footer-bg: #D2B48C;     /* Tan for footer */
+      }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+ 
+  
+  .overlay {
+    background: transparent;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: var(--accent2);
+  }
+  
+  h1 {
+    color: var(--accent1);
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .subheading {
+    font-size: 1.5rem;
+    color: var(--accent2);
+    text-align: center;
+  }
+  
+  #toggle-theme {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent1);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--bg-color);
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 15px;
+    background-color: var(--card-bg);
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--accent1);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--accent2);
+  }
+  
+  main {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, var(--card-bg), var(--bg-color));
+  }
+  
+  section {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 2.5rem;
+    color: var(--accent1);
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: var(--accent2);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: var(--accent1);
+  }
+  
+  #info-text {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+  
+  .product-category {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .product-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .testimonial {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #f0ece2;
+    color: #2e2a28;
+  }
+  
+  footer {
+    text-align: center;
+    background: var(--footer-bg);
+    padding: 20px;
+    color: var(--accent1);
+    font-size: 1.2rem;
+  }
+  
+  /* Scroll animations */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #products,
+#form-section {
+  background-color: #4E342E; /* A rich brown shade */
+  color: #fff;             /* Change text color to white for contrast */
+  padding: 40px 20px;      /* Optional: adjust padding as needed */
+  border-radius: 8px;      /* Optional: add some rounded corners */
+}

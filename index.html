@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zari Essentials - Haircare Redefined</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <nav>
+   
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#form-section">Contact</a></li>
+      </ul>
+    </nav>
+
+  <section class="hero">
+    <video autoplay muted loop id="bg-video">
+      <source src="Get Perfect haircare.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="overlay">
+      <h1 id="main-title"></h1>
+      <p class="subheading"></p>
+     
+    </div>
+</section>
+
+  
+
+  <main>
+    <section>
+      <h2>Our Philosophy</h2>
+      <p id="info-text">At Zari Essentials, we believe that nature and science form the perfect partnership to unlock your hair's true potential. Our products are meticulously handcrafted using sustainably sourced botanicals and active natural extracts, combined with the latest scientific research. This thoughtful blend ensures that each formulation not only nurtures your hair but also enhances its unique texture and natural beauty. By embracing both time-honored traditions and innovative techniques, we create effective, clean, and transformative haircare solutions that bring out the very best in your natural hair.</p>
+      <button onclick="changeContent()">Reveal Secret Formula</button>
+    </section>
+
+    <section id="products">
+      <h2>Our Collection</h2>
+      <div class="product-category" id="product-container"></div>
+    </section>
+
+    <section id="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial">
+        <p>"Zari Essentials completely changed my hair game. It's softer, shinier, and I get compliments all the time!"</p>
+        <h4>- Amina K.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I struggled with hair growth for years until I found Zari's Hair Elixir. Now my hair is thriving!"</p>
+        <h4>- Lebo M.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Natural ingredients, beautiful packaging, and results that speak for themselves. I’m a lifelong customer."</p>
+        <h4>- Zara P.</h4>
+      </div>
+    </section>
+
+    <section id="form-section">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Zari Essentials. All rights reserved.</p>
+  </footer>
+</body>
+</html>
